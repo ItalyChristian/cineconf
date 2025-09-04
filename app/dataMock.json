@@ -1,0 +1,25 @@
+{
+  "menuAttributes": [
+    {
+      "id": 1,
+      "children": "Início",
+      "text": "grid-one",
+      "link": "/",
+      "newTab": false
+    },
+    {
+      "id": 2,
+      "children": "Como Funciona",
+      "text": "grid-one",
+      "link": "#how-it-works",
+      "newTab": false
+    },
+    {
+      "id": 3,
+      "children": "Explorar",
+      "text": "explorar",
+      "link": "/announcements",
+      "newTab": false
+    }
+  ]
+}
