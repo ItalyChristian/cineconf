@@ -22,22 +22,9 @@ export const image = style({
   // filter: " grayscale(100%)",
 });
 
-export const leftArrow = style({
+export const arrow = style({
   position: "absolute",
   top: "50%",
-  left: "10px",
-  transform: "translateY(-50%)",
-  fontSize: "2rem",
-  background: "transparent",
-  border: "none",
-  color: "#fff",
-  cursor: "pointer",
-});
-
-export const rightArrow = style({
-  position: "absolute",
-  top: "50%",
-  right: "10px",
   transform: "translateY(-50%)",
   fontSize: "2rem",
   background: "transparent",

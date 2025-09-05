@@ -81,7 +81,7 @@ export const socialLink = style({
   cursor: "pointer",
 
   ":hover": {
-    backgroundColor: "#2A2118",
+    backgroundColor: "#B3C1D1",
   },
 });
 

@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import logo from "./logo.png";
 import * as styles from "./styles.css";
 import { Menu, X } from "lucide-react";
 import { MenuMobile } from "./MenuMobile";
-import logo from "./logo.png";
+import { Button, HStack } from "@chakra-ui/react";
 
 export type MenuLinkProps = {
   id?: number;
@@ -19,8 +20,7 @@ export type MenuProps = {
 };
 
 export const Header = ({ links }: MenuProps) => {
-  const logoLink =
-    "https://victorious.fandom.com/pt-br/wiki/Hollywood_Arts_High_School";
+  const logoLink = "#";
   const [visible, setVisible] = useState(false);
 
   if (links.length === 0) return null;
@@ -90,10 +90,10 @@ export const Header = ({ links }: MenuProps) => {
               </Link>
             ))}
             <div>
-              <Link href="/register" onClick={() => setVisible(false)}>
-                <button className={styles.button} aria-label="Cadastro">
+              <Link href="#" onClick={() => setVisible(false)}>
+                <Button aria-label="Cadastro" className={styles.button}>
                   CADASTRO
-                </button>
+                </Button>
               </Link>
             </div>
           </div>

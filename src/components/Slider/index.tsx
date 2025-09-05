@@ -36,14 +36,16 @@ export const Slider = ({ images }: ImageSliderProps) => {
       </div>
 
       <button
-        className={styles.leftArrow}
+        className={styles.arrow}
         onClick={goToPrev}
+        style={{ left: "10px" }}
         aria-label="Ir para imagem anterior"
       >
         &#10094;
       </button>
       <button
-        className={styles.rightArrow}
+        className={styles.arrow}
+        style={{ right: "10px" }}
         onClick={goToNext}
         aria-label="Ir para próxima imagem"
       >

@@ -141,7 +141,7 @@ export const navLink = style({
   color: "white",
 
   ":hover": {
-    color: "#111F30",
+    color: "#B3C1D1",
     transition: "all 0.3s ease-out",
   },
 });
@@ -158,14 +158,9 @@ export const navLinkMobile = style({
 
 export const button = style({
   backgroundColor: "#111F30",
-  color: "white",
   padding: "0.8rem",
-  cursor: "pointer",
-  textDecoration: "none",
-  borderRadius: "4px",
   fontWeight: 600,
   transition: "all 0.3s ease",
-  border: "none",
 
   ":hover": {
     backgroundColor: "#07101A",
