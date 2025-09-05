@@ -6,6 +6,7 @@ import logo from "./logo.png";
 import * as styles from "./styles.css";
 import { Menu, X } from "lucide-react";
 import { MenuMobile } from "./MenuMobile";
+import { Button } from "@radix-ui/themes";
 
 export type MenuLinkProps = {
   id?: number;
@@ -90,9 +91,15 @@ export const Header = ({ links }: MenuProps) => {
             ))}
             <div>
               <Link href="#" onClick={() => setVisible(false)}>
-                <button aria-label="Cadastro" className={styles.button}>
+                <Button
+                  color="gray"
+                  variant="solid"
+                  highContrast
+                  aria-label="Cadastro"
+                  className={styles.button}
+                >
                   CADASTRO
-                </button>
+                </Button>
               </Link>
             </div>
           </div>

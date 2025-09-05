@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import * as styles from "./styles.css";
-import { Text } from "@chakra-ui/react";
+import { Text } from "@radix-ui/themes";
+
 import { ItemElement } from "./sliderData";
 import Image from "next/image";
 
