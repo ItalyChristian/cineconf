@@ -12,7 +12,7 @@ export const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.grid}>
         <div id="footer-col-1">
-          <p className={styles.colTitle}>Our Coworking</p>
+          <p className={styles.colTitle}>CINECONF</p>
           <p className={styles.subtitle}>
             Conectando clientes aos melhores profissionais freelancers desde
             2025.
