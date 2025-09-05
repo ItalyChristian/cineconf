@@ -6,7 +6,6 @@ import logo from "./logo.png";
 import * as styles from "./styles.css";
 import { Menu, X } from "lucide-react";
 import { MenuMobile } from "./MenuMobile";
-import { Button } from "@chakra-ui/react";
 
 export type MenuLinkProps = {
   id?: number;
@@ -91,9 +90,9 @@ export const Header = ({ links }: MenuProps) => {
             ))}
             <div>
               <Link href="#" onClick={() => setVisible(false)}>
-                <Button aria-label="Cadastro" className={styles.button}>
+                <button aria-label="Cadastro" className={styles.button}>
                   CADASTRO
-                </Button>
+                </button>
               </Link>
             </div>
           </div>
