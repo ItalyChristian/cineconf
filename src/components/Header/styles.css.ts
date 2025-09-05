@@ -91,20 +91,20 @@ export const menuMobileContainer = style({
 
 export const logoContainer = style({
   // width: "12rem",
-  // height: "3rem",
+  height: "3rem",
   display: "flex",
   alignItems: "center",
   gap: "0.5rem",
 });
 
 export const imageWrapper = style({
-  height: "100%",
+  // height: "100%",
   color: "white",
 });
 
 export const imageStyles = style({
   maxWidth: "100px",
-  height: "50px",
+  height: "100%",
 });
 
 export const navContainer = style({

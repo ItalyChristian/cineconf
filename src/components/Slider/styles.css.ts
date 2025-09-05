@@ -11,15 +11,15 @@ export const sliderContainer = style({
 
 export const imageWrapper = style({
   width: "100%",
-
   position: "relative",
   overflow: "hidden",
 });
 
 export const image = style({
   width: "100%",
-  height: "90vh",
+  height: "100%",
   objectFit: "cover",
+  // filter: " grayscale(100%)",
 });
 
 export const leftArrow = style({

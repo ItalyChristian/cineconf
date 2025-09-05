@@ -16,8 +16,8 @@
     },
     {
       "id": 3,
-      "children": "Explorar",
-      "text": "explorar",
+      "children": "Catálogo",
+      "text": "catalogo",
       "link": "/announcements",
       "newTab": false
     }

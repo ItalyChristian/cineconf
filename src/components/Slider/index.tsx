@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import * as styles from "./styles.css";
 import { StaticImageData } from "next/image";
 
@@ -38,14 +38,14 @@ export const Slider = ({ images }: ImageSliderProps) => {
       <button
         className={styles.leftArrow}
         onClick={goToPrev}
-        aria-label="Go to previous image"
+        aria-label="Ir para imagem anterior"
       >
         &#10094;
       </button>
       <button
         className={styles.rightArrow}
         onClick={goToNext}
-        aria-label="Go to next image"
+        aria-label="Ir para próxima imagem"
       >
         &#10095;
       </button>

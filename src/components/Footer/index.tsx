@@ -14,8 +14,7 @@ export const Footer = () => {
         <div id="footer-col-1">
           <p className={styles.colTitle}>CINECONF</p>
           <p className={styles.subtitle}>
-            Conectando clientes aos melhores profissionais freelancers desde
-            2025.
+            Proporcionando experiências inesquescíveis desde 2019.
           </p>
           <div className={styles.socialLinks}>
             <a className={styles.socialLink}>

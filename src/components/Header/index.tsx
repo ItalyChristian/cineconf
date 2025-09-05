@@ -5,7 +5,7 @@ import Image from "next/image";
 import * as styles from "./styles.css";
 import { Menu, X } from "lucide-react";
 import { MenuMobile } from "./MenuMobile";
-import tempLogo from "../../assets/images/tempLogo.png";
+import logo from "./logo.png";
 
 export type MenuLinkProps = {
   id?: number;
@@ -61,7 +61,13 @@ export const Header = ({ links }: MenuProps) => {
           }`}
         >
           <Link href={logoLink} className={styles.logoContainer}>
-            <div className={styles.imageWrapper}>CINECONF</div>
+            <div className={styles.imageWrapper}>
+              <Image
+                src={logo}
+                alt="Logo da CineConf"
+                className={styles.imageStyles}
+              />
+            </div>
           </Link>
 
           <div className={styles.navContainer}>
