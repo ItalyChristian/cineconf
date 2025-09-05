@@ -18,7 +18,7 @@
       "id": 3,
       "children": "Catálogo",
       "text": "catalogo",
-      "link": "/announcements",
+      "link": "#",
       "newTab": false
     }
   ]

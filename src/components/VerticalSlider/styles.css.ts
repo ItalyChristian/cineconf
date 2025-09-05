@@ -28,7 +28,7 @@ export const content = style({
 });
 
 export const imageContainer = style({
-  width: "40%",
+  width: "30vw",
   height: "90%",
   overflow: "hidden",
 });

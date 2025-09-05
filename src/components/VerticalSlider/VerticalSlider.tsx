@@ -41,7 +41,7 @@ export const VerticalSlider = ({ items }: VerticalSliderProps) => {
             <Image
               src={items[currentIndex].image}
               alt={items[currentIndex].alt}
-              style={{ height: "100%", objectFit: "cover" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
 

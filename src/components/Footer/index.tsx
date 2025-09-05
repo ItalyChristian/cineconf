@@ -1,12 +1,6 @@
 import * as styles from "./styles.css";
 import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
 
-type LayoutType = "page" | "main";
-
-type FooterProps = {
-  layout?: LayoutType;
-};
-
 export const Footer = () => {
   return (
     <footer className={styles.container}>

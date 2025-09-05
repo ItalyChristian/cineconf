@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image";
-import firstImage from "../Slider/slider1.jpg";
-import secondImage from "../Slider/slider2.jpg";
-import thirdImage from "../Slider/slider3.jpg";
-import fourthImage from "../Slider/slider4.jpg";
-import heartless from "./heartless.jpg";
+import sala1 from "./sala1.jpg";
+import sala2 from "./sala2.jpg";
+import sala3 from "./sala3.jpg";
+import sala4 from "./sala4.jpg";
+import sala5 from "./sala5.jpg";
 
 export interface ItemElement {
   title: string;
@@ -15,35 +15,35 @@ export interface ItemElement {
 
 export const verticalSliderData: ItemElement[] = [
   {
-    image: fourthImage,
+    image: sala1,
     alt: "Description for Image 1",
     title: "Title 1",
     text: "Title 1",
     backgroundColor: "#111F30",
   },
   {
-    image: secondImage,
+    image: sala2,
     alt: "Description for Image 2",
     title: "Title 2",
     text: "Title 2",
     backgroundColor: "#2E455E",
   },
   {
-    image: thirdImage,
+    image: sala3,
     alt: "Description for Image 3",
     title: "Title 3",
     text: "Title 3",
     backgroundColor: "#59718C",
   },
   {
-    image: firstImage,
+    image: sala4,
     alt: "Description for Image 4",
     title: "Title 4",
     text: "Title 4",
     backgroundColor: "#91A4BA",
   },
   {
-    image: heartless,
+    image: sala5,
     alt: "Description for Image 5",
     title: "Title 5",
     text: "Title 5",
