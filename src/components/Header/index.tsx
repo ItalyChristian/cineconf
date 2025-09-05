@@ -50,7 +50,7 @@ export const Header = ({ links }: MenuProps) => {
               }`}
               aria-label="Abrir menu"
             >
-              <Menu className={styles.icon} />
+              <Menu className={styles.icon} style={{ color: "white" }} />
             </button>
           )}
         </div>
@@ -61,8 +61,7 @@ export const Header = ({ links }: MenuProps) => {
           }`}
         >
           <Link href={logoLink} className={styles.logoContainer}>
-            <div className={styles.imageWrapper}>LOGO</div>
-            <p>Contrate os melhores freelancers para qualquer trabalho</p>
+            <div className={styles.imageWrapper}>CINECONF</div>
           </Link>
 
           <div className={styles.navContainer}>

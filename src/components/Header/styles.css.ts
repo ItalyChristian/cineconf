@@ -2,9 +2,12 @@ import { style } from "@vanilla-extract/css";
 
 export const container = style({
   width: "100%",
+  position: "fixed",
+  top: 0,
+  left: 0,
   backgroundColor: "transparent",
   color: "grey",
-  zIndex: "10",
+  zIndex: 10,
 });
 
 export const containerMobileVisible = style({
@@ -42,7 +45,7 @@ export const buttonBurger = style({
 export const icon = style({
   width: "2.5rem",
   height: "2.5rem",
-  color: "white",
+  color: "#07101A",
 });
 
 export const buttonHidden = style({
@@ -77,8 +80,8 @@ export const menuMobileContainer = style({
   top: 0,
   left: 0,
   zIndex: 5,
-  backgroundColor: "var(--dark-grey)",
-  color: "white",
+  backgroundColor: "#D7DFE8",
+
   "@media": {
     "screen and (min-width: 769px)": {
       display: "none",
@@ -96,6 +99,7 @@ export const logoContainer = style({
 
 export const imageWrapper = style({
   height: "100%",
+  color: "white",
 });
 
 export const imageStyles = style({
@@ -126,11 +130,15 @@ export const navContainerMobile = style({
 export const firstItem = style({
   color: "#111F30",
   fontWeight: "bold",
+
+  textShadow:
+    " -1px -1px 0 white,   1px -1px 0 white,   -1px 1px 0 white,   1px 1px 0 white",
 });
 
 export const navLink = style({
   fontWeight: 600,
   transition: "color 0.3s",
+  color: "white",
 
   ":hover": {
     color: "#111F30",

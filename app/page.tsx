@@ -3,12 +3,14 @@ import styles from "./page.module.css";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import data from "./dataMock.json";
+import { Slider } from "@/components/Slider";
+import { sliderData } from "../src/components/Slider/sliderData";
 
 export default function Home() {
   return (
     <div>
       <Header links={data.menuAttributes} />
-      BODY
+      <Slider images={sliderData} />
       <Footer />
     </div>
   );

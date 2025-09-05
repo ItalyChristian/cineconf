@@ -34,63 +34,27 @@ export const Footer = () => {
         </div>
 
         <div id="footer-col-2">
-          <p className={styles.colTitle}>Categorias</p>
+          <p className={styles.colTitle}>Contato</p>
           <ul className={styles.ul}>
             <li className={styles.li}>
               <a className={styles.listItem} href="#">
-                Design & Criatividade
+                email.ficticio@email.com
               </a>
             </li>
             <li className={styles.li}>
               <a className={styles.listItem} href="#">
-                Desenvolvimento & TI
+                (00) 0000-000
               </a>
             </li>
             <li className={styles.li}>
               <a className={styles.listItem} href="#">
-                Marketing Digital
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                Finanças & Contabilidade
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                Música & Áudio
+                (00) 00000-000
               </a>
             </li>
           </ul>
         </div>
 
         <div id="footer-col-3">
-          <p className={styles.colTitle}>Empresa</p>
-          <ul className={styles.ul}>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                Sobre nós
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                Termos de serviço
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                Política de privacidade
-              </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                Contato
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div id="footer-col-4">
           <p className={styles.colTitle}>Suporte</p>
           <ul className={styles.ul}>
             <li className={styles.li}>
@@ -105,19 +69,19 @@ export const Footer = () => {
             </li>
             <li className={styles.li}>
               <a className={styles.listItem} href="#">
-                Oferecer serviços na Bico
+                Orçamento para eventos
               </a>
             </li>
             <li className={styles.li}>
               <a className={styles.listItem} href="#">
-                Solicitar serviços na Bico
+                Reservas
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div className={styles.bottom}>
-        <p>&copy; 2025 Our Coworking. Todos os direitos reservados.</p>
+        <p>&copy; 2025 CineConf. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
