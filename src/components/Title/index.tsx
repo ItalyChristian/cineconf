@@ -6,7 +6,7 @@ type TitleProps = {
 
 export function Title({ children, ...rest }: TitleProps) {
   return (
-    <Heading as="h2" size="8">
+    <Heading as="h2" size="8" style={{ color: "#111F30" }}>
       {children}
     </Heading>
   );

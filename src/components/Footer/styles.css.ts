@@ -3,7 +3,7 @@ import { style } from "@vanilla-extract/css";
 export const container = style({
   backgroundColor: "#111F30",
   color: "white",
-  padding: "50px 30px 0 60px",
+  padding: "30px 30px 0 60px",
 
   "@media": {
     "screen and (max-width: 768px)": {
