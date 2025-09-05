@@ -1,16 +1,29 @@
 import { style } from "@vanilla-extract/css";
 
-export const wrapper = style({
+export const flexContainer = style({
   display: "flex",
   alignItems: "center",
+});
+
+export const wrapper = style({
+  flexDirection: "column",
+  gap: "2rem",
+  marginTop: "2rem",
+});
+
+export const content = style({
   justifyContent: "center",
   gap: "2rem",
+
+  "@media": {
+    "screen and (max-width: 768px)": {
+      flexDirection: "column",
+    },
+  },
 });
 
 export const itemContainer = style({
-  display: "flex",
   flexDirection: "column",
-  alignItems: "center",
   gap: "1rem",
 });
 

@@ -70,11 +70,12 @@ export const socialLinks = style({
 });
 
 export const socialLink = style({
+  width: "35px",
+  height: "35px",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: "35px",
-  height: "35px",
+
   backgroundColor: "rgba(255, 255, 255, 0.1)",
   borderRadius: "50%",
   transition: "background-color 0.3s",

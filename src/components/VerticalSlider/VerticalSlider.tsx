@@ -30,19 +30,15 @@ export const VerticalSlider = ({ items }: VerticalSliderProps) => {
       </div>
 
       <div
-        style={{
-          display: "flex",
-          flex: 10,
-          gap: "3rem",
-          backgroundColor: items[currentIndex].backgroundColor,
-        }}
+        className={styles.contentWrapper}
+        style={{ backgroundColor: items[currentIndex].backgroundColor }}
       >
         <div className={styles.content}>
           <div className={styles.imageContainer}>
             <Image
               src={items[currentIndex].image}
               alt={items[currentIndex].alt}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              className={styles.image}
             />
           </div>
 

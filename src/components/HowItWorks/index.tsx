@@ -7,60 +7,46 @@ import {
 import { Title } from "../Title";
 import * as styles from "./styles.css";
 import { StarShape } from "./StarShape";
+import clsx from "clsx";
 
 export const HowItWorks = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "2rem",
-        marginTop: "2rem",
-      }}
-    >
+    <section className={clsx(styles.flexContainer, styles.wrapper)}>
       <Title>Como funciona</Title>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "2rem",
-        }}
-      >
-        <div className={styles.itemContainer}>
+      <div className={clsx(styles.flexContainer, styles.content)}>
+        <div className={clsx(styles.flexContainer, styles.itemContainer)}>
           <StarShape>
             <NotebookText size={40} />
           </StarShape>
 
-          <div>Escolha uma sala</div>
+          <p>Escolha uma sala</p>
         </div>
 
-        <div className={styles.itemContainer}>
+        <div className={clsx(styles.flexContainer, styles.itemContainer)}>
           <StarShape>
             <CalendarSearch size={40} />
           </StarShape>
 
-          <div>Verifique a disponibilidade</div>
+          <p>Verifique a disponibilidade</p>
         </div>
 
-        <div className={styles.itemContainer}>
+        <div className={clsx(styles.flexContainer, styles.itemContainer)}>
           <StarShape>
             <ClipboardClock size={40} />
           </StarShape>
 
-          <div>Faça a reserva</div>
+          <p>Faça a reserva</p>
         </div>
 
-        <div className={styles.itemContainer}>
+        <div className={clsx(styles.flexContainer, styles.itemContainer)}>
           <StarShape>
             <AlarmClock size={40} />
           </StarShape>
 
-          <div>Chegue no horário</div>
+          <p>Chegue no horário</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
