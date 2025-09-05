@@ -13,6 +13,12 @@ export const imageWrapper = style({
   width: "100%",
   position: "relative",
   overflow: "hidden",
+
+  "@media": {
+    "screen and (max-width: 1024px)": {
+      height: "100%",
+    },
+  },
 });
 
 export const image = style({

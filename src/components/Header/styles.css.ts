@@ -161,6 +161,7 @@ export const button = style({
   padding: "0.8rem",
   fontWeight: 600,
   transition: "all 0.3s ease",
+  color: "white",
 
   ":hover": {
     backgroundColor: "#07101A",

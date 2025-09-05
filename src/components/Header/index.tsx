@@ -55,7 +55,7 @@ export const Header = ({ links }: MenuProps) => {
           )}
         </div>
 
-        <div
+        <nav
           className={`${styles.content} ${
             visible ? styles.contentMobileVisible : ""
           }`}
@@ -97,7 +97,7 @@ export const Header = ({ links }: MenuProps) => {
               </Link>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
 
       {visible && (
