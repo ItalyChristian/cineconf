@@ -1,5 +1,5 @@
 import * as styles from "./styles.css";
-import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Twitter, Sparkle } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -10,41 +10,46 @@ export const Footer = () => {
           <p className={styles.subtitle}>
             Proporcionando experiências inesquescíveis desde 2019.
           </p>
-          <div className={styles.socialLinks}>
-            <a className={styles.socialLink}>
-              <Facebook />
-            </a>
-            <a className={styles.socialLink}>
-              <Twitter />
-            </a>
-            <a className={styles.socialLink}>
-              <Instagram />
-            </a>
-            <a className={styles.socialLink}>
-              <Linkedin />
-            </a>
-          </div>
         </div>
 
         <div id="footer-col-2">
           <p className={styles.colTitle}>Contato</p>
-          <ul className={styles.ul}>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                email.ficticio@email.com
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+          >
+            <div className={styles.socialLinks}>
+              <a className={styles.socialLink}>
+                <Facebook />
               </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                (00) 0000-000
+              <a className={styles.socialLink}>
+                <Twitter />
               </a>
-            </li>
-            <li className={styles.li}>
-              <a className={styles.listItem} href="#">
-                (00) 00000-000
+              <a className={styles.socialLink}>
+                <Instagram />
               </a>
-            </li>
-          </ul>
+              <a className={styles.socialLink}>
+                <Sparkle />
+              </a>
+            </div>
+
+            <ul className={styles.ul}>
+              <li className={styles.li}>
+                <a className={styles.listItem} href="#">
+                  email.ficticio@email.com
+                </a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.listItem} href="#">
+                  (00) 0000-000
+                </a>
+              </li>
+              <li className={styles.li}>
+                <a className={styles.listItem} href="#">
+                  (00) 00000-000
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div id="footer-col-3">

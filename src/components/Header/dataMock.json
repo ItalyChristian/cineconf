@@ -3,14 +3,14 @@
     {
       "id": 1,
       "children": "Início",
-      "text": "grid-one",
-      "link": "/",
+      "text": "home",
+      "link": "#",
       "newTab": false
     },
     {
       "id": 2,
       "children": "Como Funciona",
-      "text": "grid-one",
+      "text": "how-it-works",
       "link": "#how-it-works",
       "newTab": false
     },

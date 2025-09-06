@@ -5,6 +5,7 @@ import { Slider } from "@/components/Slider";
 import { sliderData } from "../components/Slider/sliderData";
 import { VerticalSliderWrapper } from "@/components/VerticalSlider";
 import { HowItWorks } from "@/components/HowItWorks";
+import { BenefitsClub } from "@/components/BenefitsClub";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Slider images={sliderData} />
       <HowItWorks />
       <VerticalSliderWrapper />
+      <BenefitsClub />
       <Footer />
     </div>
   );

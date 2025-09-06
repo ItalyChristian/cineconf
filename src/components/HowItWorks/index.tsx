@@ -8,13 +8,17 @@ import { Title } from "../Title";
 import * as styles from "./styles.css";
 import { StarShape } from "./StarShape";
 import clsx from "clsx";
+import { Flex } from "@radix-ui/themes";
 
 export const HowItWorks = () => {
   return (
-    <section className={clsx(styles.flexContainer, styles.wrapper)}>
+    <section
+      id="how-it-works"
+      className={clsx(styles.flexContainer, styles.wrapper)}
+    >
       <Title>Como funciona</Title>
 
-      <div className={clsx(styles.flexContainer, styles.content)}>
+      <Flex gap="4">
         <div className={clsx(styles.flexContainer, styles.itemContainer)}>
           <StarShape>
             <NotebookText size={40} />
@@ -46,7 +50,7 @@ export const HowItWorks = () => {
 
           <p>Chegue no horário</p>
         </div>
-      </div>
+      </Flex>
     </section>
   );
 };

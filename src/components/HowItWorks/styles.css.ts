@@ -11,17 +11,6 @@ export const wrapper = style({
   marginTop: "2rem",
 });
 
-export const content = style({
-  justifyContent: "center",
-  gap: "2rem",
-
-  "@media": {
-    "screen and (max-width: 768px)": {
-      flexDirection: "column",
-    },
-  },
-});
-
 export const itemContainer = style({
   flexDirection: "column",
   gap: "1rem",
