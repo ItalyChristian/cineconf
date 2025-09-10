@@ -16,6 +16,14 @@ export const itemContainer = style({
   gap: "1rem",
 });
 
+export const flex = style({
+  "@media": {
+    "screen and (max-width: 768px)": {
+      flexDirection: "column",
+    },
+  },
+});
+
 export const star = style({
   width: "0px",
   height: "0px",

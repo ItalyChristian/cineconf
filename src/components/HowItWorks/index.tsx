@@ -18,7 +18,7 @@ export const HowItWorks = () => {
     >
       <Title>Como funciona</Title>
 
-      <Flex gap="4">
+      <Flex gap="4" className={styles.flex}>
         <div className={clsx(styles.flexContainer, styles.itemContainer)}>
           <StarShape>
             <NotebookText size={40} />
