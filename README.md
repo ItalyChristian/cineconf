@@ -9,5 +9,3 @@ Projeto site de um cinema privado (fictício).
 E é assim que está o projeto até o momento: 
 
 (Essa etapa foi concluída em: 10h e 35minutos)
-https://github.com/user-attachments/assets/94501ebc-abed-4fbd-91ec-7ae3c9a88157
-
