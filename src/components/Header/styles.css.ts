@@ -5,9 +5,18 @@ export const container = style({
   position: "fixed",
   top: 0,
   left: 0,
-  backgroundColor: "transparent",
   color: "grey",
   zIndex: 10,
+});
+
+export const transparent = style({
+  backgroundColor: "transparent",
+  transition: "background-color 0.3s ease",
+});
+
+export const withBackground = style({
+  backgroundColor: "#07101A",
+  transition: "background-color 0.3s ease",
 });
 
 export const containerMobileVisible = style({
@@ -33,6 +42,7 @@ export const buttonBurger = style({
   color: "white",
   background: "none",
   border: "none",
+
   "@media": {
     "screen and (max-width: 768px)": {
       display: "flex",

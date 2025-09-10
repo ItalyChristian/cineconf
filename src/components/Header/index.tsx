@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "./logo.png";
@@ -23,88 +23,109 @@ export const Header = ({ links }: MenuProps) => {
   const logoLink = "#";
   const [visible, setVisible] = useState(false);
 
+  const [burgerColor, setBurgerColor] = useState("white");
+  const [isBanner, setIsBanner] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const bannerHeight = window.innerHeight * 0.7;
+
+      if (scrollY < bannerHeight) {
+        setIsBanner(true);
+        setBurgerColor("white");
+      } else {
+        setIsBanner(false);
+        setBurgerColor("#07101A");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   if (links.length === 0) return null;
   const [firstLink, ...restLinks] = links;
 
   return (
-    <header>
-      <div
-        className={`${styles.container} ${
-          visible ? styles.containerMobileVisible : ""
+    <header
+      className={`${styles.container} ${
+        visible ? styles.containerMobileVisible : ""
+      } ${isBanner ? styles.transparent : styles.withBackground}`}
+    >
+      <div>
+        {visible ? (
+          <button
+            onClick={() => setVisible(false)}
+            className={styles.buttonBurger}
+            aria-label="Fechar menu"
+          >
+            <X className={styles.icon} style={{ color: burgerColor }} />
+          </button>
+        ) : (
+          <button
+            onClick={() => setVisible(true)}
+            className={`${styles.buttonBurger} ${
+              visible ? styles.buttonHidden : ""
+            }`}
+            aria-label="Abrir menu"
+          >
+            <Menu className={styles.icon} style={{ color: burgerColor }} />
+          </button>
+        )}
+      </div>
+
+      <nav
+        className={`${styles.content} ${
+          visible ? styles.contentMobileVisible : ""
         }`}
       >
-        <div>
-          {visible ? (
-            <button
-              onClick={() => setVisible(false)}
-              className={styles.buttonBurger}
-              aria-label="Fechar menu"
-            >
-              <X className={styles.icon} />
-            </button>
-          ) : (
-            <button
-              onClick={() => setVisible(true)}
-              className={`${styles.buttonBurger} ${
-                visible ? styles.buttonHidden : ""
-              }`}
-              aria-label="Abrir menu"
-            >
-              <Menu className={styles.icon} style={{ color: "white" }} />
-            </button>
-          )}
-        </div>
-
-        <nav
-          className={`${styles.content} ${
-            visible ? styles.contentMobileVisible : ""
-          }`}
-        >
-          <Link href={logoLink} className={styles.logoContainer}>
-            <div className={styles.imageWrapper}>
-              <Image
-                src={logo}
-                alt="Logo da CineConf"
-                className={styles.imageStyles}
-              />
-            </div>
-          </Link>
-
-          <div className={styles.navContainer}>
-            <div className={styles.firstItem}>
-              <Link
-                href={firstLink.link}
-                target={firstLink.newTab ? "_blank" : "_self"}
-              >
-                {firstLink.children}
-              </Link>
-            </div>
-            {restLinks.map((link) => (
-              <Link
-                key={link.id}
-                href={link.link}
-                className={styles.navLink}
-                target={link.newTab ? "_blank" : "_self"}
-              >
-                {link.children}
-              </Link>
-            ))}
-            <div>
-              <Link href="#" onClick={() => setVisible(false)}>
-                <Button
-                  color="gray"
-                  variant="solid"
-                  highContrast
-                  aria-label="Cadastro"
-                  className={styles.button}
-                >
-                  CADASTRO
-                </Button>
-              </Link>
-            </div>
+        <Link href={logoLink} className={styles.logoContainer}>
+          <div className={styles.imageWrapper}>
+            <Image
+              src={logo}
+              alt="Logo da CineConf"
+              className={styles.imageStyles}
+            />
           </div>
-        </nav>
-      </div>
+        </Link>
+
+        <div className={styles.navContainer}>
+          <div className={styles.firstItem}>
+            <Link
+              href={firstLink.link}
+              target={firstLink.newTab ? "_blank" : "_self"}
+            >
+              {firstLink.children}
+            </Link>
+          </div>
+          {restLinks.map((link) => (
+            <Link
+              key={link.id}
+              href={link.link}
+              className={styles.navLink}
+              target={link.newTab ? "_blank" : "_self"}
+            >
+              {link.children}
+            </Link>
+          ))}
+          <div>
+            <Link href="#" onClick={() => setVisible(false)}>
+              <Button
+                color="gray"
+                variant="solid"
+                highContrast
+                aria-label="Cadastro"
+                className={styles.button}
+              >
+                CADASTRO
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </nav>
 
       {visible && (
         <MenuMobile firstLink={firstLink} restLinks={restLinks} setVisible />
